@@ -6,6 +6,21 @@ img:hover {
   transform: scale(1.05);
 }
 
+.sketching-container {
+  height: 600px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(255, 0, 255); */
+  background-image: url("/images/lightpainter_website_sketchingcontainer_1920x1080.jpg"); /* The image used */
+  background-position: center; /* Adjust the horizontal position */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 20%;
+}
+
+
 /* div {
   transition: transform 0.3s ease;
 }
