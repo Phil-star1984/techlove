@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI X Art Workshop – Kreativität mit KI erweitern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .code-block {
+        background-color: #111827;
+        border: 1px solid rgba(217, 70, 239, 0.3);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-family: monospace;
+        color: #e5e7eb;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white scroll-smooth flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-fuchsia-950/80 backdrop-blur-md border-b border-fuchsia-900">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-fuchsia-500 hover:scale-105 transition-transform">
+          AI X ART
+        </a>
+        <div class="hidden md:flex gap-6 font-medium text-gray-300 items-center">
+          <a href="index.html#idee" class="hover:text-yellow-400 transition-colors">Idee</a>
+          <a href="workshops.html" class="text-yellow-400 transition-colors">Workshops</a>
+          <a href="index.html#galerie" class="hover:text-yellow-400 transition-colors">Galerie</a>
+          <a href="impressum.html" class="hover:text-yellow-400 transition-colors">Impressum</a>
+          <a href="tel:+490000000000" class="flex items-center gap-2 hover:text-yellow-400 transition-colors">
+            📞 +49 (0) 123 456789
+          </a>
+        </div>
+        <a href="https://chat.whatsapp.com/Ln118mKqgAVEpZTrmDwgRn" target="_blank" class="hidden md:block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-2 px-4 rounded-lg text-sm shadow-lg transition-colors">
+          Beitreten
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 px-6 overflow-hidden">
+      <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=1600&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat opacity-30 mix-blend-screen"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-gray-900/50 via-gray-900/80 to-gray-900 z-0"></div>
+      
+      <div class="relative z-10 max-w-4xl mx-auto text-center mt-12">
+        <div class="flex items-center justify-center gap-4 mb-6">
+          <span class="bg-yellow-400 text-gray-900 text-sm font-bold px-3 py-1 rounded-full uppercase tracking-wider">Praktischer Kreativ-Workshop</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-fuchsia-400 to-fuchsia-600 mb-6 leading-tight">
+          AI X Art <br/><span class="text-3xl md:text-5xl text-white">Kreativität mit KI erweitern</span>
+        </h1>
+        
+        <div class="flex flex-wrap justify-center gap-6 mt-8 text-gray-300 text-lg">
+          <div class="flex items-center gap-2 bg-fuchsia-950/50 backdrop-blur-md px-6 py-3 rounded-xl border border-fuchsia-900/50">
+            <span class="text-yellow-400 text-xl">⏳</span> 17:00–19:00 Uhr
+          </div>
+          <div class="flex items-center gap-2 bg-fuchsia-950/50 backdrop-blur-md px-6 py-3 rounded-xl border border-fuchsia-900/50">
+            <span class="text-yellow-400 text-xl">🗓️</span> 24.06.2026
+          </div>
+          <div class="flex items-center gap-2 bg-fuchsia-950/50 backdrop-blur-md px-6 py-3 rounded-xl border border-fuchsia-900/50">
+            <span class="text-yellow-400 text-xl">📍</span> Café Experiment, Würzburg
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="flex-grow pb-16 px-6 bg-gray-900">
+      
+      <!-- Info Grid -->
+      <section class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 -mt-10 relative z-20">
+        
+        <div class="bg-fuchsia-900/30 backdrop-blur-sm p-8 rounded-2xl border border-fuchsia-800/50 shadow-2xl">
+          <h2 class="text-2xl font-bold text-yellow-400 mb-4 flex items-center gap-3">
+            🎯 Was dich erwartet
+          </h2>
+          <p class="text-gray-300 mb-4 leading-relaxed">
+            Bei „AI X Art“ treffen analoge Kreativität und künstliche Intelligenz aufeinander. Die Teilnehmer gestalten zunächst kleine Zeichnungen, Skizzen oder abstrakte Kunstwerke auf Papier und entwickeln diese anschließend mithilfe von KI kreativ weiter. So entstehen neue Bildwelten, Stilrichtungen und überraschende kreative Möglichkeiten zwischen Mensch und Maschine. Begleitet wird das Format vom Künstler Phil Splash, auch bekannt als „Der Millionenmaler“, der eine kurze Einführung in kreative KI-Workflows gibt. Danach stehen freies kreatives Arbeiten, Experimentieren und gemeinsamer Austausch im Mittelpunkt.
+          </p>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-start gap-2"><span class="text-fuchsia-400 mt-1">✔</span> Neue kreative Denkweisen kennenlernen</li>
+            <li class="flex items-start gap-2"><span class="text-fuchsia-400 mt-1">✔</span> Eigene analoge Ideen digital weiterentwickeln</li>
+            <li class="flex items-start gap-2"><span class="text-fuchsia-400 mt-1">✔</span> Erste Erfahrungen mit Prompting & Bildgenerierung</li>
+            <li class="flex items-start gap-2"><span class="text-fuchsia-400 mt-1">✔</span> Inspiration für eigene Projekte mitnehmen</li>
+          </ul>
+        </div>
+
+        <div class="bg-fuchsia-900/30 backdrop-blur-sm p-8 rounded-2xl border border-fuchsia-800/50 shadow-2xl flex flex-col justify-between">
+          <div>
+            <h2 class="text-2xl font-bold text-yellow-400 mb-4 flex items-center gap-3">
+              🎒 Was du brauchst
+            </h2>
+            <ul class="space-y-2 text-gray-300 mb-6">
+              <li class="flex items-center gap-2">📱 Smartphone</li>
+              <li class="flex items-center gap-2">🤖 ChatGPT-App & aktiver Account (bitte vorab anmelden!)</li>
+              <li class="flex items-center gap-2">📝 Zeichenblock oder Papier</li>
+              <li class="flex items-center gap-2">🖍️ 2-3 Stifte / Marker nach Wahl</li>
+              <li class="flex items-center gap-2 text-gray-400 italic">Optional: vorhandene Skizzen oder eigene Kunstwerke</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-fuchsia-300 mb-2">🛠️ Verwendete Tools</h3>
+            <p class="text-sm text-gray-400">Empfohlen: ChatGPT inklusive Bildgenerierung. Alternativ andere AI-Bildtools. Die kostenlose Version reicht für einfache Experimente meist aus.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Ablaufplan -->
+      <section class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-4">Workshop-Ablauf</h2>
+          <p class="text-gray-400">Keine trockene Theorie, sondern direktes Ausprobieren & Experimentieren.</p>
+        </div>
+
+        <div class="space-y-8">
+          
+          <!-- Modul 1 -->
+          <div class="bg-gray-800/50 rounded-2xl p-6 md:p-8 border border-gray-700 hover:border-fuchsia-500/50 transition-colors">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 border-b border-gray-700 pb-4">
+              <h3 class="text-xl md:text-2xl font-bold text-fuchsia-300">Modul 1: Begrüßung & Vorstellungsrunde</h3>
+              <span class="text-yellow-400 font-mono mt-2 md:mt-0 bg-yellow-400/10 px-3 py-1 rounded">15 Min</span>
+            </div>
+            <p class="text-gray-300 font-bold mb-2">Kurze Einführung:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+              <li>Wer ist Phil Splash?</li>
+              <li>Was erwartet die Teilnehmer?</li>
+              <li>Warum KI & Kreativität?</li>
+            </ul>
+            <p class="text-gray-300 font-bold mb-2">Anschließend kurze Vorstellungsrunde:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>Name</li>
+              <li>kreativer Hintergrund</li>
+              <li>erste Erfahrungen mit KI</li>
+              <li>Erwartungen an den Workshop</li>
+            </ul>
+          </div>
+
+          <!-- Modul 2 -->
+          <div class="bg-gray-800/50 rounded-2xl p-6 md:p-8 border border-gray-700 hover:border-fuchsia-500/50 transition-colors">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 border-b border-gray-700 pb-4">
+              <h3 class="text-xl md:text-2xl font-bold text-fuchsia-300">Modul 2: KI als kreativer Sparringspartner</h3>
+              <span class="text-yellow-400 font-mono mt-2 md:mt-0 bg-yellow-400/10 px-3 py-1 rounded">20 Min</span>
+            </div>
+            <p class="text-gray-300 mb-2 font-bold">Kurze Live-Demo:</p>
+            <p class="text-gray-300 mb-4">Wie kann ChatGPT kreative Prozesse unterstützen?</p>
+            <p class="text-gray-300 mb-2 font-bold">Beispiele:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-1 mb-6">
+              <li>Brainstorming</li>
+              <li>Stilfindung</li>
+              <li>Bildideen entwickeln</li>
+              <li>kreative Blockaden lösen</li>
+              <li>Storytelling</li>
+              <li>Moodboards</li>
+              <li>Bildbeschreibungen erzeugen</li>
+            </ul>
+            
+            <h4 class="font-bold text-yellow-400 mb-2 text-sm uppercase tracking-wide">Beispiel-Prompt für Brainstorming:</h4>
+            <div class="code-block mb-4">„Gib mir 10 kreative Ideen für ein Kunstwerk zum Thema ‚Mensch und KI‘. Die Ideen sollen visuell stark, emotional und ungewöhnlich sein.“</div>
+
+            <h4 class="font-bold text-fuchsia-300 mb-2 mt-6">Ziel:</h4>
+            <p class="text-gray-300">Die Teilnehmer verstehen, dass KI nicht nur fertige Bilder erzeugt, sondern kreative Denkprozesse unterstützen kann.</p>
+          </div>
+
+          <!-- Modul 3 -->
+          <div class="bg-gray-800/50 rounded-2xl p-6 md:p-8 border border-gray-700 hover:border-fuchsia-500/50 transition-colors">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 border-b border-gray-700 pb-4">
+              <h3 class="text-xl md:text-2xl font-bold text-fuchsia-300">Modul 3: Erste KI-Experimente</h3>
+              <span class="text-yellow-400 font-mono mt-2 md:mt-0 bg-yellow-400/10 px-3 py-1 rounded">20 Min</span>
+            </div>
+            <p class="text-gray-300 mb-2">Die Teilnehmer experimentieren frei mit:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-1 mb-6">
+              <li>Textprompts</li>
+              <li>Bildideen</li>
+              <li>Stilrichtungen</li>
+              <li>kreativen Kombinationen</li>
+            </ul>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold text-yellow-400 mb-2 text-sm uppercase tracking-wide">Fotorealistischer Stil:</h4>
+                <div class="code-block text-xs h-32 overflow-auto">„Erstelle ein ultrafotorealistisches Kunstwerk von [Motiv]. Cinematic Lighting, hochdetailliert, realistische Hauttexturen, depth of field, professionelle Fotografie, ultra sharp.“</div>
+                <img src="images/ai_art_photorealism_1780995074349.png" class="w-full h-48 object-cover rounded-xl mt-4 border border-gray-700 shadow-lg" alt="Fotorealismus Beispiel" />
+              </div>
+              <div>
+                <h4 class="font-bold text-yellow-400 mb-2 text-sm uppercase tracking-wide">Anime / Manga Stil:</h4>
+                <div class="code-block text-xs h-32 overflow-auto">„Erstelle einen Anime-Charakter basierend auf [Motiv]. Hochdetaillierter Anime-Stil, expressive Augen, dynamische Beleuchtung, japanische Anime-Ästhetik.“</div>
+                <img src="images/ai_art_anime_1780995093118.png" class="w-full h-48 object-cover rounded-xl mt-4 border border-gray-700 shadow-lg" alt="Anime Beispiel" />
+              </div>
+            </div>
+            
+            <h4 class="font-bold text-yellow-400 mb-2 text-sm uppercase tracking-wide mt-8">Expressionistischer Stil:</h4>
+            <div class="code-block mb-4 text-xs">„Erstelle ein expressionistisches Gemälde von [Motiv]. Ausdrucksstarke Pinselstriche, intensive Farbkontraste, emotionale Atmosphäre, sichtbare Farbstruktur.“</div>
+            <img src="images/ai_art_expressionism_1780995104226.png" class="w-full h-64 object-cover rounded-xl mb-6 border border-gray-700 shadow-lg" alt="Expressionismus Beispiel" />
+
+            <h4 class="font-bold text-fuchsia-300 mb-2 mt-6">Ziel:</h4>
+            <p class="text-gray-300">Hemmschwellen abbauen und erste Ergebnisse erzeugen.</p>
+          </div>
+
+          <!-- Modul 4 -->
+          <div class="bg-gradient-to-r from-fuchsia-900/40 to-gray-800/50 rounded-2xl p-6 md:p-8 border border-fuchsia-700/50 hover:border-fuchsia-500/80 transition-colors relative overflow-hidden">
+            <div class="absolute right-0 top-0 w-32 h-32 bg-fuchsia-500/10 blur-3xl rounded-full"></div>
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 border-b border-fuchsia-800/50 pb-4 relative z-10">
+              <h3 class="text-xl md:text-2xl font-bold text-yellow-400">Modul 4: Human in the Loop (Highlight)</h3>
+              <span class="text-yellow-400 font-mono mt-2 md:mt-0 bg-yellow-400/20 px-3 py-1 rounded">35 Min</span>
+            </div>
+            <p class="text-gray-300 mb-2 relative z-10">Jetzt entsteht eigener kreativer Input. Die Teilnehmer:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4 relative z-10">
+              <li>zeichnen Skizzen</li>
+              <li>kritzeln Formen</li>
+              <li>malen abstrakte Elemente</li>
+              <li>erstellen Portraits oder Ideen</li>
+            </ul>
+            <p class="text-gray-300 mb-6 relative z-10">Danach: Die analogen Arbeiten werden fotografiert und mithilfe der KI weiterentwickelt.</p>
+            
+            <div class="flex flex-col lg:flex-row gap-8 relative z-10">
+              <div class="flex-1">
+                <h4 class="font-bold text-fuchsia-300 mb-2 text-sm uppercase tracking-wide">Beispiel-Prompt:</h4>
+                <div class="code-block border-fuchsia-500/40 bg-gray-900/80">„Nutze meine Skizze als Grundlage und entwickle daraus ein professionelles Kunstwerk. Behalte die ursprüngliche Idee bei, verbessere jedoch Details, Licht, Stil und Atmosphäre.“</div>
+                
+                <h4 class="font-bold text-fuchsia-300 mb-2 text-sm uppercase tracking-wide mt-6">Erweiterungen:</h4>
+                <ul class="list-disc list-inside text-gray-400 space-y-1 mb-6">
+                  <li>„… als futuristisches Kinoplakat“</li>
+                  <li>„… als fotorealistisches Gemälde“</li>
+                  <li>„… als Sci-Fi Concept Art“</li>
+                  <li>„… im Stil eines expressionistischen Künstlers“</li>
+                  <li>„… als Cyberpunk-Artwork“</li>
+                </ul>
+              </div>
+              <div class="lg:w-1/3">
+                <img src="images/ai_art_human_in_loop_1780995116105.png" class="w-full h-full min-h-[250px] object-cover rounded-xl border border-fuchsia-500/30 shadow-[0_0_20px_rgba(217,70,239,0.15)]" alt="Human in the Loop Concept Art" />
+              </div>
+            </div>
+
+            <h4 class="font-bold text-fuchsia-300 mb-2 mt-6 relative z-10">Ziel:</h4>
+            <p class="text-gray-300 relative z-10">Die Teilnehmer erleben direkt die Zusammenarbeit zwischen Mensch und KI.</p>
+          </div>
+
+          <!-- Modul 5 -->
+          <div class="bg-gray-800/50 rounded-2xl p-6 md:p-8 border border-gray-700 hover:border-fuchsia-500/50 transition-colors">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 border-b border-gray-700 pb-4">
+              <h3 class="text-xl md:text-2xl font-bold text-fuchsia-300">Modul 5: Freies Experimentieren</h3>
+              <span class="text-yellow-400 font-mono mt-2 md:mt-0 bg-yellow-400/10 px-3 py-1 rounded">20 Min</span>
+            </div>
+            <p class="text-gray-300 mb-4">Offene kreative Phase. Die Teilnehmer können:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+              <li>eigene Ideen weiterentwickeln</li>
+              <li>verschiedene Prompts testen</li>
+              <li>Stile kombinieren</li>
+              <li>analoge und digitale Elemente verbinden</li>
+            </ul>
+            <p class="text-gray-300 mb-4">Phil Splash unterstützt individuell bei:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-1 mb-6">
+              <li>Prompting</li>
+              <li>kreativen Ideen</li>
+              <li>Bildgestaltung</li>
+              <li>Stilentwicklung</li>
+            </ul>
+            
+            <h4 class="font-bold text-yellow-400 mb-2 text-sm uppercase tracking-wide">Kreativ-Prompt:</h4>
+            <div class="code-block text-xs">„Kombiniere meine Idee mit einer völlig unerwarteten visuellen Richtung und entwickle daraus ein einzigartiges Kunstwerk.“</div>
+          </div>
+
+          <!-- Modul 6 -->
+          <div class="bg-gray-800/50 rounded-2xl p-6 md:p-8 border border-gray-700 hover:border-fuchsia-500/50 transition-colors">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 border-b border-gray-700 pb-4">
+              <h3 class="text-xl md:text-2xl font-bold text-fuchsia-300">Modul 6: Präsentation & Abschluss</h3>
+              <span class="text-yellow-400 font-mono mt-2 md:mt-0 bg-yellow-400/10 px-3 py-1 rounded">10 Min</span>
+            </div>
+            <p class="text-gray-300 mb-2">Kurze Präsentation der Ergebnisse:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-1 mb-4">
+              <li>Was wurde erstellt?</li>
+              <li>Was hat überrascht?</li>
+              <li>Was hat funktioniert?</li>
+              <li>Welche Möglichkeiten sehen die Teilnehmer?</li>
+            </ul>
+            <p class="text-gray-400 italic mb-6">Optional: Präsentation über Screen oder Beamer.</p>
+            
+            <p class="text-gray-300 mb-2">Abschlussrunde:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>wichtigste Erkenntnisse</li>
+              <li>offene Fragen</li>
+              <li>zukünftige Nutzungsmöglichkeiten von KI im kreativen Bereich</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Links & Tools -->
+      <section class="max-w-4xl mx-auto mt-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          
+          <div>
+            <h2 class="text-2xl font-bold text-yellow-400 mb-6">Empfohlene Tools</h2>
+            <ul class="space-y-4">
+              <li><a href="https://chatgpt.com" target="_blank" class="text-fuchsia-300 hover:text-fuchsia-100 font-bold">ChatGPT &rarr;</a><br/><span class="text-sm text-gray-400">Brainstorming, Prompts & Bildgenerierung</span></li>
+              <li><a href="https://www.midjourney.com" target="_blank" class="text-fuchsia-300 hover:text-fuchsia-100 font-bold">Midjourney &rarr;</a><br/><span class="text-sm text-gray-400">Atmosphärische, cineastische Bildwelten</span></li>
+              <li><a href="https://www.krea.ai" target="_blank" class="text-fuchsia-300 hover:text-fuchsia-100 font-bold">Krea AI &rarr;</a><br/><span class="text-sm text-gray-400">Echtzeit-Generierung & Style Transfer</span></li>
+              <li><a href="https://leonardo.ai" target="_blank" class="text-fuchsia-300 hover:text-fuchsia-100 font-bold">Leonardo AI &rarr;</a><br/><span class="text-sm text-gray-400">Fotorealismus & Concept Art</span></li>
+              <li><a href="https://runwayml.com" target="_blank" class="text-fuchsia-300 hover:text-fuchsia-100 font-bold">Runway &rarr;</a><br/><span class="text-sm text-gray-400">AI-Video & Animation</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-bold text-yellow-400 mb-6">Inspiration & Links</h2>
+            <ul class="space-y-4">
+              <li><a href="https://www.youtube.com/watch?v=rFr6Ltlr7kI" target="_blank" class="text-gray-300 hover:text-white underline decoration-gray-600 underline-offset-4">The Cr[AI]tive Revolution Documentary</a></li>
+              <li><a href="https://refikanadol.com" target="_blank" class="text-gray-300 hover:text-white underline decoration-gray-600 underline-offset-4">Refik Anadol Studio</a></li>
+              <li><a href="https://vimeo.com/856306786" target="_blank" class="text-gray-300 hover:text-white underline decoration-gray-600 underline-offset-4">Unsupervised - MoMA</a></li>
+              <li><a href="https://www.youtube.com/watch?v=DAP-7shp_z0" target="_blank" class="text-gray-300 hover:text-white underline decoration-gray-600 underline-offset-4">AI art & the future of creativity</a></li>
+            </ul>
+            <p class="text-sm text-gray-500 mt-6 italic bg-gray-800/50 p-4 rounded-lg border border-gray-700">
+              "KI ersetzt Kreativität nicht. Die spannendsten Ergebnisse entstehen dann, wenn menschliche Ideen mit KI kombiniert werden."
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Call to Action -->
+    <section class="py-20 px-6 text-center bg-fuchsia-950 border-t border-fuchsia-900">
+      <h2 class="text-4xl font-bold text-yellow-400">
+        Bereit für den Workshop?
+      </h2>
+      <p class="mt-4 text-lg max-w-2xl mx-auto mb-6 text-gray-300">
+        Tritt unserer Community bei, um direkt über den nächsten Termin und die Location informiert zu werden.
+      </p>
+      <a
+        href="https://chat.whatsapp.com/Ln118mKqgAVEpZTrmDwgRn"
+        target="_blank"
+        class="inline-block mt-6 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-xl text-lg shadow-xl shadow-yellow-400/20 transition-all hover:scale-105"
+      >
+        Jetzt der WhatsApp Gruppe beitreten 🔥
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center bg-gray-950 border-t border-fuchsia-950">
+      <div class="flex justify-center gap-4 text-sm text-gray-400 mb-2">
+        <a href="impressum.html" class="hover:text-yellow-400 transition-colors">Impressum</a>
+      </div>
+      <p class="text-sm text-gray-500">
+        © 2025 Millionpainter - AI X ART – Gemeinsam die Zukunft gestalten.
+      </p>
+    </footer>
+
+    <!-- Copy to Clipboard Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const copyIcon = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>';
+        const checkIcon = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+
+        const codeBlocks = document.querySelectorAll('.code-block');
+        codeBlocks.forEach(block => {
+          // Den ursprünglichen Text speichern, bevor der Button hinzugefügt wird
+          const originalText = block.textContent.trim();
+          
+          // Container anpassen für absolute Positionierung des Buttons
+          block.classList.add('relative', 'group');
+          // Etwas mehr Padding rechts, damit der Text nicht vom Button überlagert wird
+          block.style.paddingRight = '3rem';
+          
+          const copyBtn = document.createElement('button');
+          copyBtn.innerHTML = copyIcon;
+          copyBtn.title = "In die Zwischenablage kopieren";
+          copyBtn.className = 'absolute top-2 right-2 bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white p-2 rounded opacity-60 group-hover:opacity-100 transition-all z-20 cursor-pointer border border-gray-700 shadow-sm flex items-center justify-center';
+          
+          copyBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText(originalText).then(() => {
+              copyBtn.innerHTML = checkIcon;
+              copyBtn.classList.remove('text-gray-400', 'hover:text-white');
+              copyBtn.classList.add('text-green-400', 'border-green-500');
+              
+              setTimeout(() => {
+                copyBtn.innerHTML = copyIcon;
+                copyBtn.classList.add('text-gray-400', 'hover:text-white');
+                copyBtn.classList.remove('text-green-400', 'border-green-500');
+              }, 2000);
+            }).catch(err => {
+              console.error('Failed to copy text: ', err);
+            });
+          });
+          
+          block.appendChild(copyBtn);
+        });
+      });
+    </script>
+  </body>
+</html>

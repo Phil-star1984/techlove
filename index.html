@@ -11,10 +11,31 @@
       content="Tech & Art Würzburg – Das Meetup für Künstler, Entwickler und Kreative, die Technologie nutzen, um echte Probleme in der Stadt zu lösen."
     />
   </head>
-  <body class="bg-gray-900 text-white">
+  <body class="bg-gray-900 text-white scroll-smooth">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-fuchsia-950/80 backdrop-blur-md border-b border-fuchsia-900">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-fuchsia-500 hover:scale-105 transition-transform">
+          AI X ART
+        </a>
+        <div class="hidden md:flex gap-6 font-medium text-gray-300 items-center">
+          <a href="#idee" class="hover:text-yellow-400 transition-colors">Idee</a>
+          <a href="workshops.html" class="hover:text-yellow-400 transition-colors">Workshops</a>
+          <a href="#galerie" class="hover:text-yellow-400 transition-colors">Galerie</a>
+          <a href="impressum.html" class="hover:text-yellow-400 transition-colors">Impressum</a>
+          <a href="tel:+490000000000" class="flex items-center gap-2 hover:text-yellow-400 transition-colors">
+            📞 +49 (0) 123 456789
+          </a>
+        </div>
+        <a href="https://chat.whatsapp.com/Ln118mKqgAVEpZTrmDwgRn" target="_blank" class="hidden md:block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold py-2 px-4 rounded-lg text-sm shadow-lg transition-colors">
+          Beitreten
+        </a>
+      </div>
+    </nav>
+
     <!-- Hero Section -->
     <section
-      class="h-[70vh] flex flex-col items-center justify-center text-center px-6 bg-[url('/images/techlove_header_02.webp')] bg-cover bg-center bg-no-repeat"
+      class="h-[70vh] flex flex-col items-center justify-center text-center px-6 bg-[url('/images/techlove_header_02.webp')] bg-cover bg-center bg-no-repeat pt-16"
     >
       <div
         class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent pointer-events-none"
@@ -38,7 +59,7 @@
     </section>
 
     <!-- Unsere Idee -->
-    <section class="py-16 px-6 bg-fuchsia-950 text-center">
+    <section id="idee" class="py-16 px-6 bg-fuchsia-950 text-center">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-yellow-400">Unsere Idee</h2>
         <p class="mt-4 text-lg">
@@ -79,7 +100,7 @@
     </section>
 
     <!-- Warum mitmachen? -->
-    <section class="py-16 px-6 bg-fuchsia-900">
+    <section id="warum" class="py-16 px-6 bg-fuchsia-900">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl font-bold text-yellow-400">
           Warum solltest du mitmachen?
@@ -118,7 +139,7 @@
     </section>
 
     <!-- Bildgalerie -->
-    <section class="py-16 px-6 bg-fuchsia-950 text-center">
+    <section id="galerie" class="py-16 px-6 bg-fuchsia-950 text-center">
       <h2 class="text-3xl font-bold text-yellow-400">
         Eindrücke & Inspiration
       </h2>
@@ -221,7 +242,10 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-6 text-center bg-fuchsia-900">
+    <footer class="py-6 text-center bg-fuchsia-950">
+      <div class="flex justify-center gap-4 text-sm text-fuchsia-300 mb-2">
+        <a href="impressum.html" class="hover:text-yellow-400 transition-colors">Impressum</a>
+      </div>
       <p class="text-sm text-fuchsia-300">
         © 2025 Millionpainter - AI X ART – Gemeinsam die Zukunft gestalten.
       </p>
